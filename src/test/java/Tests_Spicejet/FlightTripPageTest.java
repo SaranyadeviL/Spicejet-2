@@ -34,7 +34,7 @@ public class FlightTripPageTest extends  BaseTest{
         bookingPage.setTownCity("Coimbatore");
 
         //Adding passenger details
-        bookingPage.setF_Name("Saranya");
+        bookingPage.setF_Name("SaranyaDevi");
         bookingPage.setL_Name("L");
         bookingPage.setM_Number("1248671562");
 
@@ -53,34 +53,39 @@ public class FlightTripPageTest extends  BaseTest{
 
     @Test
     public void toFlightTrip1() throws InterruptedException {
-        flightTrip.setRoundTrip();
-        flightTrip.setDeparture();
-        flightTrip.setSelectDelhi();
-        flightTrip.setDestination();
-        flightTrip.setSelectMumbai();
+        flightTripPage.setRoundTrip();
+        flightTripPage.setDeparture();
+        flightTripPage.setSelectDelhi();
+        flightTripPage.setDestination();
+        flightTripPage.setSelectMumbai();
         Thread.sleep(3000);
-        flightTrip.setDepartureDate();
-        flightTrip.setReturnDate();
-        flightTrip.setReturnDay();
-        flightTrip.setPassengers();
-        flightTrip.setPassengers1();
-        flightTrip.setSearchFlight();
+
+        flightTripPage.setDepartureDate();
+        flightTripPage.setReturnDate();
+        flightTripPage.setReturnDay();
+        flightTripPage.setPassengers();
+        flightTripPage.setPassengers1();
+        flightTripPage.setSearchFlight();
         Thread.sleep(7000);
-        flightTrip.setContinueButton();
+        flightTripPage.setContinueButton();
         Thread.sleep(9000);
-        bookingPage.setFirstName("Sowmya");
-        bookingPage.setLastName("Bala");
-        bookingPage.setMobileNumber("123456789");
-        bookingPage.setEmailId("Sowmya123@gmail.com");
+        bookingPage.setFirstName("SaranyaDevi");
+        bookingPage.setLastName("L");
+        bookingPage.setMobileNumber("7373329541");
+        bookingPage.setEmailId("Saranya291295@gmail.com");
+
         //bookingPage.setCountryMenu();
-        bookingPage.setTownCity("Chennai");
+        bookingPage.setTownCity("Coimbatore");
+
         //Adding passenger details
-        bookingPage.setF_Name("Sowmya");
-        bookingPage.setL_Name("R");
-        bookingPage.setM_Number("123456789");
+        bookingPage.setF_Name("SaranyaDevi");
+        bookingPage.setL_Name("L");
+        bookingPage.setM_Number("158976469");
+
         //bookingPage.setClickNext();
         bookingPage.setContinue();
         Thread.sleep(6000);
+
         //WebDriverWait wait = new  WebDriverWait (driver, Duration.ofSeconds(40));
         //wait.until(ExpectedConditions.visibilityOfElementLocated(By.tagName("img"))).click();
         String str = driver.getCurrentUrl();
